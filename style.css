@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+* { font-family: 'Inter', sans-serif; }
+
+/* Reusable effects */
+.fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+.gradient-bg { background: linear-gradient(135deg, #6EE7B7 0%, #3B82F6 100%); }
+
+/* Nav link underline hover */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: "";
+  position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+  background: #3B82F6; transition: width .3s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+/* Hero kenburns */
+@keyframes kenburns {
+  from { transform: scale(1.00); }
+  to   { transform: scale(1.10); }
+}
+.animate-kenburns { animation: kenburns 8s ease-in-out alternate infinite; }
+@media (max-width: 768px){
+  #hero img { object-position: 50% 40% !important; }
+}
+
+/* Education timeline animations & hover */
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.tl-item { opacity: 0; transform: translateY(24px); transition: transform .3s ease; }
+.tl-item.show { animation: riseIn .6s ease forwards; }
+.tl-card { transition: transform .25s ease, box-shadow .25s ease; }
+.tl-card:hover { transform: translateY(-4px); box-shadow: 0 18px 35px rgba(0,0,0,.08); }
+
+/* Skill bars */
+.skill-bar { width: 0%; transition: width 2s ease-in-out; }
+.skill-bar.animate { width: var(--width); }
+
+/* Certifications cards */
+.cert-card {
+  background: #fff; border-radius: 0.75rem; overflow: hidden;
+  border: 1px solid rgb(229 231 235);
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,.12);
+  background: #fafafa;
+}
+
+/* Contact section */
+.contact-section {
+  text-align: center;
+  margin: 60px 0 80px 0;
+}
+.contact-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+.contact-sub {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.social-link {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+.social-icon { margin-right: 8px; }

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rudra Patole - Portfolio</title>
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- ============== NAVBAR ============== -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur z-50 shadow">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Rudra Patole</div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#about" class="nav-link text-gray-600 hover:text-gray-800">About</a>
+        <a href="#education" class="nav-link text-gray-600 hover:text-gray-800">Education</a>
+        <a href="#projects" class="nav-link text-gray-600 hover:text-gray-800">Projects</a>
+        <a href="#experience" class="nav-link text-gray-600 hover:text-gray-800">Experience</a>
+        <a href="#skills" class="nav-link text-gray-600 hover:text-gray-800">Skills</a>
+        <a href="#contact" class="nav-link text-gray-600 hover:text-gray-800">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============== HERO ============== -->
+  <section id="hero" class="relative h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
+    <img src="rudra_1.jpeg" alt="Rudra Patole"
+         class="absolute inset-0 w-full h-full object-cover object-[50%_58%] animate-kenburns" />
+    <div class="absolute inset-0 bg-black/45"></div>
+
+    <div class="relative z-10 max-w-4xl px-6 translate-y-32 md:translate-y-40">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow">Rudra Patole</h1>
+      <p class="text-lg md:text-2xl mb-8 opacity-95">
+        <span class="font-semibold">Tech & Business Enthusiast</span> •
+        <span class="font-semibold">Problem Solver</span> •
+        <span class="font-semibold">Lifelong Learner</span>
+      </p>
+
+      <div class="flex justify-center mt-6 space-x-6">
+        <a href="#projects"
+           class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+          View My Work
+        </a>
+        <a href="cv.pdf" download
+           class="bg-violet-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-violet-700 transition">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="flex justify-center md:justify-start">
+          <div class="w-48 h-48 md:w-96 md:h-96 rounded-full overflow-hidden ring-4 ring-violet-500 shadow-xl">
+            <img src="rudra.jpeg" alt="Rudra Patole portrait" class="w-full h-full object-cover object-center"/>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            I'm a 22-year-old MBA student specializing in Digital Transformation at NMIMS, Mumbai. With a strong
+            foundation in Computer Engineering and hands-on experience across software development, analytics,
+            marketing, and leadership, I aim to bridge business strategy with data-driven innovation. Passionate
+            about AI, analytics, and creative problem-solving, I thrive on turning ideas into impactful solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EDUCATION (TIMELINE) ============== -->
+  <section id="education" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">Education</h2>
+
+      <div class="relative">
+        <div class="pointer-events-none absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 rounded-full
+                    bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 opacity-40"></div>
+
+        <ul class="space-y-10 md:space-y-14">
+          <!-- 1 -->
+          <li class="tl-item group md:flex md:items-center md:justify-between">
+            <div class="tl-card w-full md:w-[46%] bg-white rounded-xl shadow-md p-5 md:text-right border border-gray-100">
+              <div class="text-sm text-gray-500 mb-1">2025–27</div>
+              <h3 class="text-xl font-semibold">NMIMS School of Business Management</h3>
+              <p class="text-gray-600">MBA — Digital Transformation</p>
+            </div>
+            <div class="relative mx-auto my-4 md:my-0">
+              <span class="h-5 w-5 rounded-full bg-blue-500 ring-8 ring-white block"></span>
+            </div>
+            <div class="hidden md:block w-[46%]"></div>
+          </li>
+
+          <!-- 2 -->
+          <li class="tl-item group md:flex md:flex-row-reverse md:items-center md:justify-between">
+            <div class="tl-card w-full md:w-[46%] bg-white rounded-xl shadow-md p-5 border border-gray-100">
+              <div class="text-sm text-gray-500 mb-1">2021–25</div>
+              <h3 class="text-xl font-semibold">K.J. Somaiya Institute of Technology</h3>
+              <p class="text-gray-600">B.Tech — Computer Engineering <span class="font-medium">(GPA: 8.08)</span></p>
+            </div>
+            <div class="relative mx-auto my-4 md:my-0">
+              <span class="h-5 w-5 rounded-full bg-emerald-500 ring-8 ring-white block"></span>
+            </div>
+            <div class="hidden md:block w-[46%]"></div>
+          </li>
+
+          <!-- 3 -->
+          <li class="tl-item group md:flex md:items-center md:justify-between">
+            <div class="tl-card w-full md:w-[46%] bg-white rounded-xl shadow-md p-5 md:text-right border border-gray-100">
+              <div class="text-sm text-gray-500 mb-1">2021</div>
+              <h3 class="text-xl font-semibold">DAV International School</h3>
+              <p class="text-gray-600">Higher Secondary (CBSE) — <span class="font-medium">94.2%</span></p>
+            </div>
+            <div class="relative mx-auto my-4 md:my-0">
+              <span class="h-5 w-5 rounded-full bg-pink-500 ring-8 ring-white block"></span>
+            </div>
+            <div class="hidden md:block w-[46%]"></div>
+          </li>
+
+          <!-- 4 -->
+          <li class="tl-item group md:flex md:flex-row-reverse md:items-center md:justify-between">
+            <div class="tl-card w-full md:w-[46%] bg-white rounded-xl shadow-md p-5 border border-gray-100">
+              <div class="text-sm text-gray-500 mb-1">2019</div>
+              <h3 class="text-xl font-semibold">Ryan International School</h3>
+              <p class="text-gray-600">Secondary (ICSE) — <span class="font-medium">92.67%</span></p>
+            </div>
+            <div class="relative mx-auto my-4 md:my-0">
+              <span class="h-5 w-5 rounded-full bg-amber-500 ring-8 ring-white block"></span>
+            </div>
+            <div class="hidden md:block w-[46%]"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== EXPERIENCE ============== -->
+  <section id="experience" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Internships & Experience</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-blue-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-blue-300">
+          <h3 class="text-xl font-bold">Software Development Cell</h3>
+          <p class="text-sm text-gray-700">Mar 2022 – Jun 2022</p>
+          <p class="mt-2 text-gray-800">
+            Developed a Duplicate Marksheet Module and responsive UI with database integration.
+          </p>
+        </div>
+
+        <div class="bg-green-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-green-300">
+          <h3 class="text-xl font-bold">CASCADE - Somaiya Vidyavihar University</h3>
+          <p class="text-sm text-gray-700">Jun 2023 – July 2023</p>
+          <p class="mt-2 text-gray-800">
+            Led a geospatial mapping project fencing 75,000 plots; managed and trained 45 interns.
+          </p>
+        </div>
+
+        <div class="bg-pink-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-pink-300">
+          <h3 class="text-xl font-bold">Textify Analytics</h3>
+          <p class="text-sm text-gray-700">May 2024 – August 2024</p>
+          <p class="mt-2 text-gray-800">
+            Improved CTR by 12% and reduced ad spend inefficiency by 10% using analytics & CRM dashboards.
+          </p>
+        </div>
+
+        <div class="bg-yellow-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-yellow-300">
+          <h3 class="text-xl font-bold">Eyecan Solutions</h3>
+          <p class="text-sm text-gray-700">Mar 2025 – May 2025</p>
+          <p class="mt-2 text-gray-800">
+            Organized outreach events, achieved 25% donor-to-sale conversion and built corporate partnerships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROJECTS ============== -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Academic Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
+          <div class="flex items-center space-x-3 mb-3">
+            <span class="text-2xl">📊</span>
+            <h3 class="text-xl font-bold">Marketing Management</h3>
+          </div>
+          <p class="text-gray-800">
+            Built a GTM strategy for a renewable energy solution, including Porter’s Five Forces analysis.
+          </p>
+        </div>
+
+        <div class="bg-white border border-gray-200 p-6 rounded-xl shadow-md transform transition hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
+          <div class="flex items-center space-x-3 mb-3">
+            <span class="text-2xl">🐍</span>
+            <h3 class="text-xl font-bold">Programming for Analytics</h3>
+          </div>
+          <p class="text-gray-800">
+            Performed EDA on 5,000+ ESG metrics; visualized data using Python, Pandas, and Matplotlib.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SKILLS + CERTIFICATIONS ============== -->
+  <section id="skills" class="py-20 bg-white fade-in">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Skills</h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Left -->
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Python</span><span class="text-gray-500">80%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-blue-500 h-3 rounded-full" style="--width: 80%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">SQL</span><span class="text-gray-500">80%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-green-500 h-3 rounded-full" style="--width: 80%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Power BI</span><span class="text-gray-500">60%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-yellow-500 h-3 rounded-full" style="--width: 60%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Microsoft Office</span><span class="text-gray-500">90%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-cyan-500 h-3 rounded-full" style="--width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Google Analytics</span><span class="text-gray-500">70%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-pink-500 h-3 rounded-full" style="--width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Canva/Photoshop</span><span class="text-gray-500">90%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-purple-500 h-3 rounded-full" style="--width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">HubSpot CRM</span><span class="text-gray-500">60%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-indigo-500 h-3 rounded-full" style="--width: 60%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Database Management</span><span class="text-gray-500">90%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-orange-500 h-3 rounded-full" style="--width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Back-End Development</span><span class="text-gray-500">60%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-red-500 h-3 rounded-full" style="--width: 60%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-1">
+              <span class="text-gray-700 font-medium">Front-End Development</span><span class="text-gray-500">85%</span>
+            </div>
+            <div class="bg-gray-200 rounded-full h-3">
+              <div class="skill-bar bg-teal-500 h-3 rounded-full" style="--width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <section id="certifications" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">Certifications</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <a href="https://www.coursera.org/account/accomplishments/verify/WO0UTAR2K8ZK" target="_blank"
+               class="cert-card block">
+              <img src="c1.png" alt="Generative AI: Prompt Engineering Basics" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-md font-semibold">Generative AI: Prompt Engineering Basics</h3>
+                <p class="text-sm text-gray-500">Coursera</p>
+              </div>
+            </a>
+
+            <a href="https://www.coursera.org/account/accomplishments/verify/JPC979CPT436" target="_blank"
+               class="cert-card block">
+              <img src="c2.png" alt="AI Agents & Agentic AI with Python" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-md font-semibold">AI Agents & Agentic AI with Python</h3>
+                <p class="text-sm text-gray-500">Coursera</p>
+              </div>
+            </a>
+
+            <a href="https://www.coursera.org/account/accomplishments/verify/C3H0EDMGEK1T" target="_blank"
+               class="cert-card block">
+              <img src="c3.png" alt="Data Analysis and Visualization with Power BI" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-md font-semibold">Data Analysis & Visualization with Power BI</h3>
+                <p class="text-sm text-gray-500">Coursera</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/learning/me/my-library/completed" target="_blank"
+               class="cert-card block">
+              <img src="c4.png" alt="Sales: Analytics-Driven Storytelling" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="text-md font-semibold">Sales: Analytics-Driven Storytelling</h3>
+                <p class="text-sm text-gray-500">LinkedIn Learning</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-50 py-12">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold mb-2">Let's Connect</h2>
+    <p class="text-gray-600 mb-6">
+      Open to collaborations, opportunities, and conversations around 
+      <span class="font-medium">Digital Transformation, Data & AI</span>.
+    </p>
+
+    <!-- Social Links -->
+    <div class="flex justify-center space-x-8">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/rudra-p-008282230/" target="_blank"
+         class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-medium">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" 
+             alt="LinkedIn" width="20" class="inline-block">
+        <span>LinkedIn Profile</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Rudra7777" target="_blank"
+         class="flex items-center space-x-2 text-gray-800 hover:text-gray-600 font-medium">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" 
+             alt="GitHub" width="20" class="inline-block">
+        <span>GitHub Profile</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="mt-12 bg-gray-900 text-gray-200 text-center py-4 text-sm">
+    © 2025 Rudra Patole. All rights reserved.
+  </div>
+</section>
+
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
