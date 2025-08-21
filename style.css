@@ -38,7 +38,11 @@
 .tl-card:hover { transform: translateY(-4px); box-shadow: 0 18px 35px rgba(0,0,0,.08); }
 
 /* Skill bars */
-.skill-bar { width: 0%; transition: width 2s ease-in-out; }
+ .skill-bar{
+  width: 0% !important;                 /* important wins over any auto width */
+  transition: width 1.6s ease-in-out;   /* smooth fill animation */
+  display: block;                       /* ensures width behaves predictably */
+}
 .skill-bar.animate { width: var(--width); }
 
 /* Certifications cards */
