@@ -79,6 +79,30 @@ const fadeObserver = new IntersectionObserver(
     try { vid.pause(); } catch (_) {}
   }
   
+document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('#skills');
+    const bars = section.querySelectorAll('.skill-bar');
 
+    // make sure everything is at 0% initially
+    bars.forEach(b => b.style.width = '0%');
+
+    const io = new IntersectionObserver((entries) => {
+      const e = entries[0];
+      if (!e.isIntersecting) return;
+
+      // animate each bar to its own --width value (e.g. "60%")
+      bars.forEach(bar => {
+        const target = bar.style.getPropertyValue('--width').trim()
+                     || getComputedStyle(bar).getPropertyValue('--width').trim()
+                     || '0%';
+        // trigger on next frame to ensure transition runs
+        requestAnimationFrame(() => { bar.style.width = target; });
+      });
+
+      io.disconnect(); // run once
+    }, { threshold: 0.35 });
+
+    io.observe(section);
+  });
 
   
